@@ -21,7 +21,6 @@ class Artist
   end
   
   def song_count
-    binding pry
     Song.all.each {|song| 
   end
 
