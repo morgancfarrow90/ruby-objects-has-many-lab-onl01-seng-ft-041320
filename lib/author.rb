@@ -26,6 +26,6 @@ class Author
   end
   
   def self.post_count
-    @@postsarray
+    @@postcount
   end 
 end
