@@ -22,6 +22,7 @@ class Post
   else
     self.author.name
   end
+end
   
   def artist_name=(name)
     if (self.artist.nil?)
