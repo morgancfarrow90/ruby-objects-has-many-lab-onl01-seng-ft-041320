@@ -11,11 +11,14 @@ class Author
   def add_post(title)
     title.author = self
     @postsarray << title
+    @@postcount =+ 1
   end
   
   def add_post_by_title(name) 
     title = Post.new(name)
+    @postsarray << title
     add_post(title)
+    @@postsarray +=1
   end
  
   def posts
@@ -23,5 +26,5 @@ class Author
   end
   
   def self.post_count
-    
+    @@postsarray
 end
