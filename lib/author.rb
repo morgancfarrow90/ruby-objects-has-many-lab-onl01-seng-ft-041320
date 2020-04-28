@@ -18,7 +18,7 @@ class Author
     title = Post.new(name)
     @postsarray << title
     add_post(title)
-    @@postsarray +=1
+    @@postsarray += 1
   end
  
   def posts
