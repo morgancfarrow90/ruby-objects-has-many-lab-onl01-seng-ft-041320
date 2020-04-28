@@ -3,6 +3,8 @@
 class Artist
   attr_accessor :name
   
+  @@song_count
+  
   def initialize(name)
     @name = name
     @song = []
@@ -24,7 +26,6 @@ class Artist
   end
   
   def song_count
-    #for each artist, count number of songs in their array, then return total 
-    return self.songs.size?
+    @@song_count
   end
 end
