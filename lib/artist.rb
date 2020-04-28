@@ -25,6 +25,6 @@ class Artist
   
   def song_count
     #for each artist, count number of songs in their array, then return total 
-    self.songs 
+    self.songs.size 
   end
 end
