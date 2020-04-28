@@ -17,6 +17,19 @@ class Post
   end
   
   def author_name
+    if (self.author.nil?)
+      return nil
     self.author.name
+  else
   end
+  
+  def artist_name=(name)
+    if (self.artist.nil?)
+      self.artist = Artist.new(name)
+    else
+      self.artist.name = name
+    end
+  end
+  
+  
 end
