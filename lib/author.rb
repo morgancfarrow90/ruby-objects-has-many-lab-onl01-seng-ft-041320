@@ -27,4 +27,5 @@ class Author
   
   def self.post_count
     @@postsarray
+  end 
 end
