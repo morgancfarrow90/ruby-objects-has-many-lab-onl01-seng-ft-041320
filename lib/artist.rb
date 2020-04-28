@@ -24,6 +24,7 @@ class Artist
   end
   
   def song_count
+    #for each artist, count number of songs in their array, then return total 
     
   end
 end
