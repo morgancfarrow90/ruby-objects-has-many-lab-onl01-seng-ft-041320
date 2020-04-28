@@ -1,5 +1,5 @@
 #have many songs, have method that returns a collection of all the songs that belong to that artist
-
+require 'pry'
 class Artist
   attr_accessor :name
  
