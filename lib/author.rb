@@ -1,8 +1,11 @@
 class Author 
   attr_accessor :name
+  
+  @@postcount = 0 
  
   def initialize(name)
     @name = name
+    @postsarray = []
   end
  
   def add_post(title)
@@ -17,4 +20,7 @@ class Author
   def posts
     Post.all.select {|post| post.author == self}
   end
+  
+  def self.post_count
+    
 end
